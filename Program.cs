@@ -54,6 +54,17 @@ namespace IDP_assg_3
                 g.Print();
             }
             Console.ResetColor();
+
+            Console.ForegroundColor= ConsoleColor.Yellow;
+            foreach (Grundämne grundämne in grundämnen)
+            {
+                if (grundämne.Typ == "metall")
+                {
+                    Console.WriteLine(grundämne.Namn);
+                }
+            }
+            Console.ResetColor();
+
         }
     }
 }
