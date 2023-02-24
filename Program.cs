@@ -38,6 +38,18 @@ namespace IDP_assg_3
             syre.Print();
             järn.Print();
             guld.Print();
+
+            Grundämne[] grundämnen = new Grundämne[6];
+
+            grundämnen[0] = new Grundämne("Syre", 8, "ickemetall", 54.36, 90.188);
+            grundämnen[1] = new Grundämne("Järn", 26, "metall", 1811, 3134);
+            grundämnen[2] = new Grundämne("Guld", 79, "metall", 1337.33, 3243);
+
+            grundämnen[3] = new Grundämne("Väte", 1, "ickemetall", 13.99, 20.271);
+            grundämnen[4] = new Grundämne("Brom", 35, "ickemetall", 265.8, 332.0);
+            grundämnen[5] = new Grundämne("Kvicksilver", 80, "metall", 234.3210, 629.88);
+
+
         }
     }
 }
