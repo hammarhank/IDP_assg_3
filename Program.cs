@@ -64,7 +64,19 @@ namespace IDP_assg_3
                 }
             }
             Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("\nGrundämnen som har en smältpunkt under 273.16 K (d.v.s. 0°C) och en kokpunkt över 273.16");
+            Console.WriteLine();
+            foreach (Grundämne grundämne in grundämnen)
+            {
+                if (grundämne.Smältpunkt < 273.16 && grundämne.Kokpunkt > 273.16)
+                {
+                    Console.WriteLine(grundämne.Namn);
+                }
+            }
 
+
+            Console.ResetColor();
         }
     }
 }
