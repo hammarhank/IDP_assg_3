@@ -24,7 +24,7 @@ namespace IDP_assg_3
                 
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.WriteLine($"Grundämne: {Namn.ToUpper()}\n Typ: {Typ}\n Smältpunkt: {Smältpunkt}K\n Kokpunkt: {Kokpunkt}K ");
-                    Console.WriteLine();
+                    Console.WriteLine($"===================================");
 
                 
             }
@@ -49,7 +49,11 @@ namespace IDP_assg_3
             grundämnen[4] = new Grundämne("Brom", 35, "ickemetall", 265.8, 332.0);
             grundämnen[5] = new Grundämne("Kvicksilver", 80, "metall", 234.3210, 629.88);
 
-
+            foreach(Grundämne g in grundämnen)
+            {
+                g.Print();
+            }
+            Console.ResetColor();
         }
     }
 }
